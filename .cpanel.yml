@@ -1,4 +1,7 @@
-deployement:
-  tasks:
-    - export DEPLOYPATH=/home/lifedtzt/public_html
-    - /bin/cp -a * $DEPLOYPATH
+---
+deployment:
+ tasks:
+  - export DEPLOYPATH=/home/lifedtzt/public_html/
+  - /bin/rm -Rf $DEPLOYPATH
+  - /bin/mkdir $DEPLOYPATH
+  - /bin/cp -R src/ $DEPLOYPATH
