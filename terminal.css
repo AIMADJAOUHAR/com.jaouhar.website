@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lucida-Console';
+    src: url('fonts/Lucida-Console.ttf.woff') format('woff'), url('fonts/Lucida-Console.ttf.svg#Lucida-Console') format('svg'), url('fonts/Lucida-Console.ttf.eot'), url('fonts/Lucida-Console.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/Lucida-Console.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida-Console';
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+.row {
+    display: table;
+    table-layout: fixed;
+}
+
+.col {
+    display: table-cell;
+}
+
+.prompt {}
+
+.commandLine {
+    width: 100%;
+}
+
+input {
+    color: inherit;
+    font: inherit;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
